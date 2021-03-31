@@ -5,10 +5,10 @@ service:
   - docker
   
 before-install:
-    - docker build -t prafulla-pol/docker-react -f Dockerfile.dev .
+    - docker build -t prafullpol/docker-react -f Dockerfile.dev .
     
 script:
-  - docker run prafulla-pol/docker-react npm run test -- --coverage
+  - docker run prafullpol/docker-react npm run test -- --coverage
 
 deploy:
   provider: elasticbeanstalk
